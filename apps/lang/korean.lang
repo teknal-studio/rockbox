@@ -414,15 +414,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "FM 라디오"
+    radio,innioasisy*: "FM 라디오"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "FM 라디오"
+    radio,innioasisy*: "FM 라디오"
   </voice>
 </phrase>
 <phrase>
@@ -11070,15 +11070,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "확인"
+    touchscreen,innioasisy*: "확인"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "확인"
+    touchscreen,innioasisy*: "확인"
   </voice>
 </phrase>
 <phrase>
@@ -11087,15 +11087,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "삭제"
+    touchscreen,innioasisy*: "삭제"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "삭제"
+    touchscreen,innioasisy*: "삭제"
   </voice>
 </phrase>
 <phrase>
@@ -11104,15 +11104,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "취소"
+    touchscreen,innioasisy*: "취소"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "취소"
+    touchscreen,innioasisy*: "취소"
   </voice>
 </phrase>
 <phrase>

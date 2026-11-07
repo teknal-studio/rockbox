@@ -208,7 +208,7 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
@@ -216,7 +216,7 @@
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "收聽 FM 廣播"
+    radio,innioasisy*: "收聽 FM 廣播"
   </voice>
 </phrase>
 <phrase>

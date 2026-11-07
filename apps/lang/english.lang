@@ -470,15 +470,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </voice>
 </phrase>
 <phrase>
@@ -3628,7 +3628,7 @@
     *: none
     rtc: "ON = Set"
     aigoerosq,erosqnative,gogearsa9200,samsungyh*,xduoox3*: "PLAY = Set"
-    gigabeat*,iaudiom5,iaudiox5,ipod*,innioasisy1,iriverh10,iriverh10_5gb,mrobe100,sansac200*,sansaclip*,sansaconnect,sansae200*,sansafuze*: "SELECT = Set"
+    gigabeat*,iaudiom5,iaudiox5,ipod*,innioasisy*,iriverh10,iriverh10_5gb,mrobe100,sansac200*,sansaclip*,sansaconnect,sansae200*,sansafuze*: "SELECT = Set"
     iriverh100,iriverh120,iriverh300: "NAVI = Set"
     mpiohd300: "ENTER = Set"
     mrobe500: "HEART = Set"
@@ -3638,7 +3638,7 @@
     *: none
     rtc: "ON = Set"
     aigoerosq,erosqnative,gogearsa9200,samsungyh*,xduoox3*: "PLAY = Set"
-    gigabeat*,iaudiom5,iaudiox5,ipod*,innioasisy1,iriverh10,iriverh10_5gb,mrobe100,sansac200*,sansaclip*,sansaconnect,sansae200*,sansafuze*: "SELECT = Set"
+    gigabeat*,iaudiom5,iaudiox5,ipod*,innioasisy*,iriverh10,iriverh10_5gb,mrobe100,sansac200*,sansaclip*,sansaconnect,sansae200*,sansafuze*: "SELECT = Set"
     iriverh100,iriverh120,iriverh300: "NAVI = Set"
     mpiohd300: "ENTER = Set"
     mrobe500: "HEART = Set"
@@ -3659,7 +3659,7 @@
     gigabeatfx,mrobe500: "POWER = Revert"
     gogearsa9200: "LEFT = Revert"
     iaudiom5,iaudiox5: "RECORD = Revert"
-    ipod*,innioasisy1,mpiohd300,sansac200*: "MENU = Revert"
+    ipod*,innioasisy*,mpiohd300,sansac200*: "MENU = Revert"
     iriverh10,iriverh10_5gb,sansae200*,sansafuze*: "PREV = Revert"
     iriverh100,iriverh120,iriverh300: "STOP = Revert"
     mrobe100: "DISPLAY = Revert"
@@ -3673,7 +3673,7 @@
     gigabeatfx,mrobe500: "POWER = Revert"
     gogearsa9200: "LEFT = Revert"
     iaudiom5,iaudiox5: "RECORD = Revert"
-    ipod*,innioasisy1,mpiohd300,sansac200*: "MENU = Revert"
+    ipod*,innioasisy*,mpiohd300,sansac200*: "MENU = Revert"
     iriverh10,iriverh10_5gb,sansae200*,sansafuze*: "PREV = Revert"
     iriverh100,iriverh120,iriverh300: "STOP = Revert"
     mrobe100: "DISPLAY = Revert"
@@ -11320,15 +11320,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </voice>
 </phrase>
 <phrase>
@@ -11337,15 +11337,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </voice>
 </phrase>
 <phrase>
@@ -11354,15 +11354,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </voice>
 </phrase>
 <phrase>

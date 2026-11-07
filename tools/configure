@@ -1776,6 +1776,7 @@ cat <<EOF
 
                                                  ==Innioasis==
                                                  310) Innioasis Y1 (WIP)
+                                                 311) Innioasis Y2 (WIP)
 EOF
 
   buildfor=`input`;
@@ -4293,6 +4294,36 @@ fi
     memory=256
     uname=`uname`
     androidcc 19 armeabi "-march=armv7-a -mtune=cortex-a9 -mfloat-abi=softfp"
+    tool="cp "
+    boottool="cp "
+    bmp2rb_mono="$rootdir/tools/bmp2rb -f 0"
+    bmp2rb_native="$rootdir/tools/bmp2rb -f 4"
+    output="librockbox.so"
+    bootoutput="librockbox.so"
+    appextra="recorder:gui:radio:hosted/android"
+    plugins="yes"
+    # architecture, manufacturer and model for the target-tree build
+    t_cpu="hosted"
+    t_manufacturer="android"
+    t_model="app"
+    ;;
+
+   311|innioasisy2)
+    # The Y2 runs the same hosted Android app as the Y1 (see innioasisy2.h);
+    # it differs in its keys, which the app translates at runtime.
+    application="yes"
+    target_id=199
+    modelname="innioasisy2"
+    target="INNIOASIS_Y2"
+    app_type="android"
+    app_set_lcd_size
+    sharedir="/data/data/org.rockbox/app_rockbox/.rockbox"
+    bindir="/data/data/org.rockbox/lib"
+    libdir="/data/data/org.rockbox/app_rockbox"
+    rbdir="/sdcard/.rockbox"
+    memory=256
+    uname=`uname`
+    androidcc 19 armeabi "-march=armv7-a -mtune=cortex-a7 -mfloat-abi=softfp"
     tool="cp "
     boottool="cp "
     bmp2rb_mono="$rootdir/tools/bmp2rb -f 0"

@@ -371,15 +371,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "FM रेडिओ"
+    radio,innioasisy*: "FM रेडिओ"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "FM रेडिओ"
+    radio,innioasisy*: "FM रेडिओ"
   </voice>
 </phrase>
 <phrase>

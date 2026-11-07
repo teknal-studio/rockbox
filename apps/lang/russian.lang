@@ -222,15 +222,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "FM-радио"
+    radio,innioasisy*: "FM-радио"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "Радио"
+    radio,innioasisy*: "Радио"
   </voice>
 </phrase>
 <phrase>
@@ -9961,15 +9961,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "~OK"
+    touchscreen,innioasisy*: "~OK"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "~OK"
+    touchscreen,innioasisy*: "~OK"
   </voice>
 </phrase>
 <phrase>
@@ -10223,15 +10223,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Удалить"
+    touchscreen,innioasisy*: "Удалить"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Удалить"
+    touchscreen,innioasisy*: "Удалить"
   </voice>
 </phrase>
 <phrase>
@@ -10630,15 +10630,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Отмена"
+    touchscreen,innioasisy*: "Отмена"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Отмена"
+    touchscreen,innioasisy*: "Отмена"
   </voice>
 </phrase>
 <phrase>

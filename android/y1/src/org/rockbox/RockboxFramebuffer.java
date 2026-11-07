@@ -76,6 +76,25 @@ public class RockboxFramebuffer extends SurfaceView
     private static final int SKIP_PREV_KEYCODE = KeyEvent.KEYCODE_MEDIA_PREVIOUS;
 
     private static final int BACK_KEYCODE = 4;
+
+    /* Innioasis Y2: its wheel and Previous/Next reach Android as DPAD keys
+     * (scancodes 103/108 and 105/106 through Generic.kl), where the Y1 sends
+     * the media keys above. A Y2 ROM can map them in its key layout, which
+     * also lets them reach the media button receiver with the screen off.
+     * This translation covers a ROM that doesn't. */
+    private static final boolean IS_Y2 = "Y2".equals(android.os.Build.DEVICE);
+
+    static int translateKey(int keyCode) {
+        if (!IS_Y2)
+            return keyCode;
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_DPAD_UP:    return SCROLL_BACK_KEYCODE; /* wheel anticlockwise */
+            case KeyEvent.KEYCODE_DPAD_DOWN:  return SCROLL_FWD_KEYCODE;  /* wheel clockwise */
+            case KeyEvent.KEYCODE_DPAD_LEFT:  return SKIP_PREV_KEYCODE;
+            case KeyEvent.KEYCODE_DPAD_RIGHT: return SKIP_NEXT_KEYCODE;
+            default:                          return keyCode;
+        }
+    }
     private Handler longPressHandler = new Handler(Looper.getMainLooper());
     private PowerManager powerManager;
     private long centerPressStartTime = 0;
@@ -196,7 +215,8 @@ public class RockboxFramebuffer extends SurfaceView
         return false;
     }
 
-    public boolean onKeyDown(final int keyCode, KeyEvent event) {
+    public boolean onKeyDown(int rawKeyCode, KeyEvent event) {
+        final int keyCode = translateKey(rawKeyCode);
         long currentTime = System.currentTimeMillis();
         
         if (keyCode == CENTER_KEYCODE) {
@@ -247,7 +267,8 @@ public class RockboxFramebuffer extends SurfaceView
         }
     }
 
-    public boolean onKeyUp(int keyCode, KeyEvent event) {
+    public boolean onKeyUp(int rawKeyCode, KeyEvent event) {
+        final int keyCode = translateKey(rawKeyCode);
         long currentTime = System.currentTimeMillis();
         if (keyCode == CENTER_KEYCODE) {
 

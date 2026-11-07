@@ -238,15 +238,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "FM广播"
+    radio,innioasisy*: "FM广播"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "FM广播"
+    radio,innioasisy*: "FM广播"
   </voice>
 </phrase>
 <phrase>
@@ -10672,15 +10672,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "完成"
+    touchscreen,innioasisy*: "完成"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "提交并退出重命名"
+    touchscreen,innioasisy*: "提交并退出重命名"
   </voice>
 </phrase>
 <phrase>
@@ -10771,15 +10771,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "删除"
+    touchscreen,innioasisy*: "删除"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "删除"
+    touchscreen,innioasisy*: "删除"
   </voice>
 </phrase>
 <phrase>
@@ -10867,15 +10867,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "取消"
+    touchscreen,innioasisy*: "取消"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "放弃并退出重命名"
+    touchscreen,innioasisy*: "放弃并退出重命名"
   </voice>
 </phrase>
 <phrase>

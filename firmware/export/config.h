@@ -508,6 +508,8 @@ Lyre prototype 1 */
 #include "config/sdlapp.h"
 #elif defined(ANDROID)
 #include "config/android.h"
+#elif defined(INNIOASIS_Y2)
+#include "config/innioasisy2.h"
 #elif defined(INNIOASIS_Y1)
 #include "config/innioasisy1.h"
 #elif defined(SAMSUNG_YPR0)

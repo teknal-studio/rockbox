@@ -405,15 +405,15 @@
   user: core
   <source>
     *: none
-    radio,innioasisy1: "FM Radio"
+    radio,innioasisy*: "FM Radio"
   </source>
   <dest>
     *: none
-    radio,innioasisy1: "Ràdio FM"
+    radio,innioasisy*: "Ràdio FM"
   </dest>
   <voice>
     *: none
-    radio,innioasisy1: "Ràdio F M"
+    radio,innioasisy*: "Ràdio F M"
   </voice>
 </phrase>
 <phrase>
@@ -12117,15 +12117,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "OK"
+    touchscreen,innioasisy*: "OK"
   </voice>
 </phrase>
 <phrase>
@@ -12218,15 +12218,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Del"
+    touchscreen,innioasisy*: "Del"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Supr"
+    touchscreen,innioasisy*: "Supr"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Supr"
+    touchscreen,innioasisy*: "Supr"
   </voice>
 </phrase>
 <phrase>
@@ -12387,15 +12387,15 @@
   user: core
   <source>
     *: none
-    touchscreen,innioasisy1: "Cancel"
+    touchscreen,innioasisy*: "Cancel"
   </source>
   <dest>
     *: none
-    touchscreen,innioasisy1: "Cancel·la"
+    touchscreen,innioasisy*: "Cancel·la"
   </dest>
   <voice>
     *: none
-    touchscreen,innioasisy1: "Cancel·la"
+    touchscreen,innioasisy*: "Cancel·la"
   </voice>
 </phrase>
 <phrase>

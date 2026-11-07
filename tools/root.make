@@ -167,7 +167,7 @@ else # core
     include $(ROOTDIR)/firmware/target/hosted/ibasso/android_ndk.make
   else
     ifneq (,$(findstring android, $(APP_TYPE)))
-      ifneq (,$(findstring innioasisy1, $(MODELNAME)))
+      ifneq (,$(findstring innioasisy, $(MODELNAME)))
 	    include $(ROOTDIR)/android/y1/android.make
       else
 	    include $(ROOTDIR)/android/generic/android.make
