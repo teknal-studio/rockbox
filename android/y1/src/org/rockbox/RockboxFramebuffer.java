@@ -228,6 +228,11 @@ public class RockboxFramebuffer extends SurfaceView
                 return buttonHandler(keyCode, true);  
             } else {
                 centerIsHeld = true;
+                /* Y2: holding Centre is only the context menu, which the
+                 * core opens itself from the held button. It has a Power
+                 * button for sleep, so Centre doesn't sleep on release. */
+                if (IS_Y2)
+                    return true;
                 long elapsed = event.getEventTime() - centerPressStartTime;
                 if (elapsed >= SLEEP_THRESHOLD_MS && !centerSleepTriggered) {
                     centerSleepTriggered = true;
@@ -275,8 +280,11 @@ public class RockboxFramebuffer extends SurfaceView
             longPressHandler.removeCallbacks(centerShutdownRunnable);
             
             long holdDuration = event.getEventTime() - centerPressStartTime;
-            
-            if (centerSleepTriggered) {
+
+            if (IS_Y2) {
+                /* the core already saw the hold as repeats; just release */
+                buttonHandler(keyCode, false);
+            } else if (centerSleepTriggered) {
                 try {
                     powerManager.goToSleep(SystemClock.uptimeMillis());
                     /* goToSleep only requests sleep, this takes some time
