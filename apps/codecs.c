@@ -154,11 +154,35 @@ struct codec_api ci = {
 
 };
 
+#if (CONFIG_PLATFORM & PLATFORM_ANDROID) && defined(INNIOASIS_Y1)
+/* Android only gives an app its library folder (CODECS_DIR) when the app is
+ * installed or updated as a package. When Rockbox is built into a firmware
+ * image as a system app, it has no such folder, so the firmware puts the
+ * codecs in SYSTEM_CODECS_DIR instead. Use the app's folder when it has the
+ * codecs, so an installed update always uses its own. */
+#define SYSTEM_CODECS_DIR "/system/lib/rockbox"
+
+static const char *codecs_dir(void)
+{
+    static const char *dir = NULL;
+    if (!dir)
+        dir = file_exists(CODECS_DIR "/" CODEC_PREFIX "mpa." CODEC_EXTENSION)
+                ? CODECS_DIR : SYSTEM_CODECS_DIR;
+    return dir;
+}
+
+void codec_get_full_path(char *path, const char *codec_root_fn)
+{
+    snprintf(path, MAX_PATH-1, "%s/" CODEC_PREFIX "%s." CODEC_EXTENSION,
+             codecs_dir(), codec_root_fn);
+}
+#else
 void codec_get_full_path(char *path, const char *codec_root_fn)
 {
     snprintf(path, MAX_PATH-1, CODECS_DIR "/" CODEC_PREFIX "%s."
             CODEC_EXTENSION, codec_root_fn);
 }
+#endif
 
 /* Returns pointer to and size of free codec RAM. Aligns to MEM_ALIGN_SIZE. */
 void *codec_get_buffer_callback(size_t *size)

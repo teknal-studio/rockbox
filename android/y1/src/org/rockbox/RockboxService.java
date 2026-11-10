@@ -255,6 +255,11 @@ public class RockboxService extends Service
                  * to them from native code
                  */
                 File libMisc = new File("/data/data/org.rockbox/lib/libmisc.so");
+                /* Built into a firmware image as a system app, Rockbox has
+                 * no app library folder; the firmware puts libmisc.so with
+                 * the codecs (see codecs_dir() in apps/codecs.c). */
+                if (!libMisc.exists())
+                    libMisc = new File("/system/lib/rockbox/libmisc.so");
                 /* use arbitrary file to determine whether extracting is needed */
                 File arbitraryFile = new File(rockboxCreditsPath, "credits.rock");
                 File rockboxInfoFile = new File(rockboxSdDirPath, "rockbox-info.txt");
